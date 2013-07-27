@@ -1,3 +1,45 @@
+var clockWrap=$("#clockWrap");
+var horParts=$(".part0 , .part3 , .part6");
+var vertParts=$(".part1 , .part2, .part4, .part5");
+var p0=$(".part0");
+var p1=$(".part1");
+var p2=$(".part2");
+var p3=$(".part3");
+var p4=$(".part4");
+var p5=$(".part5");
+var p6=$(".part6");
+var digitWraps=$(".clockDigit");
+var spacedDigits=$("#clockDigit3 , #clockDigit5");
+
+var setScale=function(){
+
+  var wrapWidth=clockWrap.width();
+  clockWrap.css({marginTop:"20px"});
+  digitWraps.css({
+    "width": wrapWidth*(115/880),
+    "height": wrapWidth*(210/880),
+    "margin": wrapWidth*(10/880)+"px"
+  });
+
+  spacedDigits.css(
+  {
+    "margin-left": wrapWidth*(40/880)+"px"
+  } 
+  );
+
+  horParts.css({
+    width: wrapWidth*(75/880),
+    height: wrapWidth*(30/880)
+  });
+ 
+  vertParts.css({
+    height: wrapWidth*(75/880),
+    width: wrapWidth*(30/880)
+
+  });
+}
+
+
 var time=function(){return(new Date().toString().slice(16,24))};//helper function for time strings
 timeToDigits=function(timeString){
 	var di1=timeString[0];
@@ -48,7 +90,9 @@ var updateClock=function(){
 	}
 		
 }
+setScale();
+document.body.style.backgroundColor="#282828";
 updateClock();
 setInterval(updateClock,1000);
-
+$(window).resize(setScale);
 
