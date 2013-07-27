@@ -5,19 +5,39 @@
 	<title>Digital Clock?</title>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<style>
-		div.clockDigit{position:relative; height: 210px;width:115px;float:left; margin: 10px;}
-		#clockDigit3, #clockDigit5{margin-left:40px;}
-		.part{position:absolute;}
-		.part0{top:0;left:20px;}
-		.part1{top:20px; left:0;}
-		.part2{top:20px; left:85px;}
-		.part3{top:85px; left:20px; }
-		.part4{top:105px; left:0px;}
-		.part5{top:105px; left:85px;}
-		.part6{top:170px;left:20px;}
+
+		div#clockWrap{
+		  width:100%;
+		}
+		div.clockDigit{position:relative; height:73px;width:40px;float:left; margin: 3.4782608695652173px;}
+		#clockDigit3, #clockDigit5{margin-left:34.78260869565217%;}
+		.part{position:absolute;
+		}
+		.part0{top:0;left:17.391304347826086%;
+		  width: 26.08695652173913px; height: 10.434782608695652px
+		}
+		.part1{top:9.523809523809523%; left:0%; 
+		  height: 26.08695652173913px; width: 10.434782608695652px;
+   		}
+		.part2{top:9.523809523809523%; left:73.91304347826087%; 
+		 height: 26.08695652173913px; width: 10.434782608695652px;	
+		}
+		.part3{top:40.476190476190477%; left:17.391304347826086%;
+		   width: 26.08695652173913px; height: 10.434782608695652px
+		 }
+		.part4{top:50%; left:0px;
+		  height: 26.08695652173913px; width: 10.434782608695652px;
+		}
+		.part5{top:50%; left:73.91304347826087%;
+		  height: 26.08695652173913px; width: 10.434782608695652px;
+		}
+		.part6{top:80.95238095238095%;left:17.391304347826086%;
+		  width: 26.08695652173913px; height: 10.434782608695652px
+		}
 	</style>
 </head>
 <body>
+	<div id="clockWrap">
 	<div id="clockDigit1" class="clockDigit" >
 		<img class="part part0" src="./drawingA.svg" alt="" />
 		<img class="part part1" src="./drawingB.svg" alt="" />
@@ -78,7 +98,7 @@
                 <img class="part part6" src="./drawingA.svg" alt="" />
 
         </div>
-
+	</div><!--end of clockWrap -->
 
 
 </body>
