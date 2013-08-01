@@ -107,7 +107,9 @@ updateClock();
 setInterval(updateClock,1000);
 $(window).resize(setScale);
 
-$("#fgColorPicker").farbtastic(function(){$("g").css({fill:$.farbtastic("#fgColorPicker").color}); $("#fgColorPicker").toggle();}).toggle();
+$("#fgColorPicker").farbtastic(function(){$("g").css({fill:$.farbtastic("#fgColorPicker").color}); $("#fgColorPicker").toggle();});
+ $.farbtastic("#fgColorPicker").setColor("#89c");
+ $("fgColorPicker").toggle();
 $("g").click(function(){$("#fgColorPicker").toggle()});
 
 
