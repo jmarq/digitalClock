@@ -36,11 +36,12 @@ var setScale=function(){
     height: wrapWidth*(30/880)
  
   });
-  vertParts.css({
+/*  vertParts.css({
     height: wrapWidth*(75/880),
     width: wrapWidth*(30/880)
 
   });
+*/
   vertParts.attr({
     height: wrapWidth*(75/880),
     width: wrapWidth*(30/880)
