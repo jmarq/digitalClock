@@ -107,3 +107,7 @@ updateClock();
 setInterval(updateClock,1000);
 $(window).resize(setScale);
 
+$("#fgColorPicker").farbtastic(function(){$("g").css({fill:$.farbtastic("#fgColorPicker").color}); $("#fgColorPicker").toggle();}).toggle();
+$("g").click(function(){$("#fgColorPicker").toggle()});
+
+
