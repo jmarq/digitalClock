@@ -1,0 +1,7 @@
+so what are the next steps?
+
+test the new inline svgs on mobile devices, multiple browsers
+
+add a color picker (farbtastic?) so user can change digit/background color
+  a radio selector for which color will be changed? value queried in callback
+  for color picker? toggle visibility of color picker?  how to keep the design of the site sharp?
