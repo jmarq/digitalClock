@@ -31,12 +31,22 @@ var setScale=function(){
     width: wrapWidth*(75/880),
     height: wrapWidth*(30/880)
   });
+  horParts.attr({
+    width: wrapWidth*(75/880),
+    height: wrapWidth*(30/880)
  
+  });
   vertParts.css({
     height: wrapWidth*(75/880),
     width: wrapWidth*(30/880)
 
   });
+  vertParts.attr({
+    height: wrapWidth*(75/880),
+    width: wrapWidth*(30/880)
+
+  });
+
 }
 
 
